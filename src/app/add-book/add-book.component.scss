@@ -1,0 +1,69 @@
+.add-book{
+  position: relative;
+  .close{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+  }
+
+  .modal-view{
+    .form-view{
+      padding: 20px;
+      form{
+        .sec-part{
+          width: 100%;
+          display: flex;
+          .form-details{
+            width: 50%;
+            .numbers{
+              display: flex;
+              .pages{
+                margin-right: 2px;
+              }
+              .quantity{
+                margin-left: 2px;
+              }
+            }
+            button{
+              margin-top: 35px;
+            }
+          }
+          .image-preview{
+            width: 50%;
+            text-align: center;
+            img{
+              padding:20px;
+              max-width: 100%;
+              height: auto;
+              max-height: 245px;
+            }
+
+          }
+          
+          
+        }
+      
+
+
+      }
+
+    }
+
+  }
+
+
+      
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+

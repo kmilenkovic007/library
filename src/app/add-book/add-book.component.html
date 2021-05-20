@@ -1,0 +1,62 @@
+<div class="add-book">
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="modal-view">
+    <div class="form-view">
+      <form>
+        <div class="first-part">
+          <div class="form-group title">
+            <label for="title">Title</label>
+            <input [(ngModel)]="book.title" #title="ngModel" name="title" id="title" type="text" class="form-control">
+          </div>
+          <div class="form-group img">
+            <label for="imageUrl">Image Url</label>
+            <input [(ngModel)]="book.imageUrl" #imageUrl="ngModel" name="imageUrl" id="imageUrl" type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="sec-part">
+          <div class="form-details">
+            <div class="form-group authors">
+              <label for="authors">Choose an author:</label>
+                <select id="authors" name="authors" #author [(ngModel)]="book.authorId" class="form-control">
+                  <option value=""></option>
+                  <option *ngFor="let author of authors" 
+                    [value]="author.id">
+                    {{author.name}}
+                  </option>
+                </select>
+            </div>
+            <div class="numbers">
+              <div class="form-group pages ">
+                <label for="pages">Pages</label>
+                <input [(ngModel)]="book.pages" #pages name="pages" id="pages" type="number" class="form-control">
+              </div>
+              <div class="form-group year">
+                <label for="Year">Year</label>
+                <input [(ngModel)]="book.year" #year name="year" id="year" type="number" class="form-control">
+              </div>
+              <div class="form-group quantity">
+                <label for="Quantity">Quantity</label>
+                <input [(ngModel)]="book.quantity" #quantity name="quantity" id="quantity" type="number" class="form-control">
+              </div>
+            </div>
+            <button class="btn btn-primary" (click)="save(book)">Submit</button>
+          </div>
+          <div class="image-preview">
+            <img [src]="book.imageUrl" >
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </div>   
+</div>
+
+
+
+
+
+    
+    
+    

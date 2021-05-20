@@ -1,0 +1,18 @@
+<div class="new-author"> 
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <form>
+    <div class="form-group">
+      <label for="name">Name of author:</label>
+      <input [(ngModel)]="author.name" #name="ngModel" name="name" id="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="yearOfBirth">Year of birth:</label>
+      <input [(ngModel)]="author.yearOfBirth" #yearOfBirth="ngModel" name="yearOfBirth" id="yearOfBirth" type="number" class="form-control" >
+    </div>
+    <button class="btn btn-primary" (click)="save(author)">Submit</button>
+  
+  </form>
+</div>
+

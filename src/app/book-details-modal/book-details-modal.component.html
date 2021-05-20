@@ -1,0 +1,41 @@
+<div class="book-details">
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="book-header">
+    <div class="icons">
+      <span class="material-icons" (click)="delete(book)">delete</span>
+      <span class="material-icons">more_vert</span>
+    </div>
+    <div class="txt">
+      <span>{{book.title}}</span><br>
+      <span>{{book.author.name}}</span>
+    </div>
+  </div>
+  <div class="image">
+    <img [src]="book.imageUrl">
+  </div>
+  <table class="table">
+    <tr>
+      <td>Info</td>
+      <td></td>
+    <tr>
+    <tr>
+      <td>Title</td>
+      <td>{{book.title}}</td>
+    <tr>
+      <td>Author</td>
+      <td>{{book.author.name}}</td>
+    <tr>
+      <td>Year</td>
+      <td>{{book.year}}</td>
+    <tr>
+      <td>Pages</td>
+      <td>{{book.pages}}</td>
+    <tr>
+      <td>Quantity</td>
+      
+        <td>{{book.quantity}}</td>
+    </table>
+</div>
+

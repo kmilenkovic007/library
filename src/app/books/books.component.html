@@ -1,0 +1,99 @@
+<div>
+  <div class="book-library">
+    <div class="book-table">
+      <div>
+        <label for="authors">Choose an author : </label>
+        <select id="authors" name="authors" [(ngModel)]="selectedAuthorId" (change)="choose(selectedAuthorId)">
+          <option value=""></option>
+          <option *ngFor="let author of authors" 
+            [value]="author.id">
+            {{author.name}}
+          </option>
+        </select><br>
+        </div>
+      <div>
+        <label for="pageSize">Choose page Size </label>
+        <select id="pageSize" name="pageSize" [(ngModel)]="pageSize" (change)="chooseSize(pageSize)">
+          <option value = "10"> 10 </option>
+          <option value = "5"> 5 </option>
+          <option value = "20"> 20 </option>
+        </select>
+      </div>
+      <div class="book-header">
+        <div class="icons">
+          <span class="material-icons reorder" (click)="isActiveMenu = !isActiveMenu">reorder</span>
+          <div *ngIf="isActiveMenu === true" class="menu">
+              <a routerLinkActive="active" routerLink="/books">Books</a>
+              <a routerLinkActive="active" routerLink="/authors">Authors</a>
+          </div>
+          <span class="material-icons search" *ngIf="isActiveSearch === false" (click)="isActiveSearch = true">search</span>
+          <div class="searchField" *ngIf="isActiveSearch === true">
+            <input type="text" (keyup)="filter()" [(ngModel)]="searchValue" placeholder="Search for book...">
+            <span class="material-icons close" (click)="closeSearch()" >close</span>
+          </div>
+        </div>
+<!-- prvo podesavamo vrednost u click da je true i u odnosu na nju uporedjujem vrednost u ngIf, kad se nesto pojavljuje, a kada ne -->
+        <div class="circle" (click)="openModalWithComponent()">+</div>
+        <h1>Books</h1>
+      </div>
+      <div class="book-body">
+        <table>
+          <thead>
+            <tr>
+              <td></td>
+              <td (click)="sort('title')">
+                <div class="sort-column">
+                  Title
+                  <span class="material-icons" *ngIf="sortDirection === 'asc' && sortName==='title'">arrow_upward</span> 
+                  <span class="material-icons" *ngIf="sortDirection === 'desc' && sortName==='title'">arrow_downward</span>
+                </div> 
+              </td>
+              <td class="author">Author</td>
+              <td (click)="sort('year')">
+                <div class="sort-column">
+                  Year
+                  <span class="material-icons" *ngIf="sortDirection === 'asc' && sortName==='year'">arrow_upward</span> 
+                  <span class="material-icons" *ngIf="sortDirection === 'desc' && sortName==='year'">arrow_downward</span>
+                </div>
+              </td>
+              <td class="sort-column" (click)="sort('pages')">Pages
+                <span class="material-icons" *ngIf="sortDirection === 'asc' && sortName==='pages'">arrow_upward</span> 
+                <span class="material-icons" *ngIf="sortDirection === 'desc' && sortName==='pages'">arrow_downward</span>
+              </td>
+              <td>Quantity</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = "let book of books" [class.selected]="book.quantity===0">
+              <td><img [src]="book.imageUrl"></td>
+              <td class="title">{{ book.title }}</td>
+              <td class="author">{{ book.author.name}}</td>
+              <td>{{ book.year }}</td>
+              <td>{{ book.pages }}</td>
+              <td>{{ book.quantity}}</td>
+              <td><button class="btn-primary" (click)="openModalWithComponent(book)" >Edit</button></td>
+              <td class="for-desktop" (click)="onSelect(book)"><span class="material-icons">more_vert</span></td>
+              <td class="for-mobile" (click)="openModalForMobile(book)"><span class="material-icons">more_vert</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul style="list-style: none;" *ngIf="!searchValue">
+        <li *ngFor="let page of pages" [class.active]="page === currentPage">
+          <a (click)="getCurrentPage(page)">{{page}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="book-details" *ngIf="selectedBook">
+      <book-details [book]="selectedBook" (deleted)="getBooksPerPage()" [reload]="getBooksPerPage.bind(this)"></book-details>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,430 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "imageUrl": "http://static1.squarespace.com/static/59a1bc2fa803bb46c79b860c/t/5ab0922b88251bfd949c392e/1521521202817/Things+Fall+Apart+cover.jpg?format=1500w",
+      "pages": 209,
+      "title": "Things Fall Apart",
+      "year": 1958,
+      "quantity": 15,
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "authorId": 2,
+      "imageUrl": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/6268/9781626860995.jpg",
+      "pages": 784,
+      "title": "Fairy tales",
+      "year": 1836,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "authorId": 3,
+      "imageUrl": "https://kbimages1-a.akamaihd.net/6d079104-b75e-4dc3-a313-3c58145703b4/1200/1200/False/the-divine-comedy-barnes-noble-collectible-editions.jpg",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "year": 1315,
+      "quantity": 55
+    },
+    {
+      "id": 4,
+      "authorId": 4,
+      "imageUrl": "https://m.media-amazon.com/images/I/51tiK-eB3JL.jpg",
+      "pages": 226,
+      "title": "Pride and Prejudice",
+      "year": 1813,
+      "quantity": 3
+    },
+    {
+      "id": 5,
+      "authorId": 5,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41F61GM4VZL._SX284_BO1,204,203,200_.jpg",
+      "pages": 256,
+      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "year": 1952,
+      "quantity": 13
+    },
+    {
+      "id": 6,
+      "authorId": 6,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328865921l/752711.jpg",
+      "pages": 1024,
+      "title": "The Decameron",
+      "year": 1351,
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "authorId": 7,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71iildYvQAL.jpg",
+      "pages": 224,
+      "title": "Ficciones",
+      "year": 1965,
+      "quantity": 120
+    },
+    {
+      "id": 8,
+      "authorId": 8,
+      "imageUrl": "https://cdn.shoplightspeed.com/shops/611345/files/8231848/faber-faber-childrens-wuthering-heights.jpg",
+      "pages": 342,
+      "title": "Wuthering Heights",
+      "year": 1847,
+      "quantity": 63
+    },
+    {
+      "id": 9,
+      "authorId": 9,
+      "imageUrl": "https://prodimage.images-bn.com/pimages/9789390492589_p0_v1_s550x406.jpg",
+      "pages": 185,
+      "title": "The Stranger",
+      "year": 1942,
+      "quantity": 7
+    },
+    {
+      "id": 10,
+      "authorId": 10,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41IdMKkkjPL._SX318_BO1,204,203,200_.jpg",
+      "pages": 320,
+      "title": "Poems",
+      "year": 1952,
+      "quantity": 24
+    },
+    {
+      "id": 11,
+      "authorId": 11,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51P16RmwhxL._SX258_BO1,204,203,200_.jpg",
+      "pages": 505,
+      "title": "Journey to the End of the Night",
+      "year": 1932,
+      "quantity": 2
+    },
+    {
+      "id": 12,
+      "authorId": 12,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/A1QU-FgkiEL.jpg",
+      "pages": 1056,
+      "title": "Don Quijote De La Mancha",
+      "year": 1610,
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "authorId": 13,
+      "imageUrl": "https://globalbookclub.s3.amazonaws.com/resources/3095731/the_canterbury_tales/cover.jpg",
+      "pages": 544,
+      "title": "The Canterbury Tales",
+      "year": 1450,
+      "quantity": 1
+    },
+    {
+      "id": 14,
+      "authorId": 14,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71dF4fTruzL.jpg",
+      "pages": 194,
+      "title": "Stories",
+      "year": 1886,
+      "quantity": 11
+    },
+    {
+      "id": 15,
+      "authorId": 15,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Nostromo1st.jpg",
+      "pages": 320,
+      "title": "Nostromo",
+      "year": 1904,
+      "quantity": 5
+    },
+    {
+      "id": 16,
+      "authorId": 16,
+      "imageUrl": "https://images.penguinrandomhouse.com/cover/9780451531186",
+      "pages": 194,
+      "title": "Great Expectations",
+      "year": 1861,
+      "quantity": 34
+    },
+    {
+      "id": 17,
+      "authorId": 17,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51AF4sHZqwL._SX322_BO1,204,203,200_.jpg",
+      "pages": 596,
+      "title": "Jacques the Fatalist",
+      "year": 1796,
+      "quantity": 29
+    },
+    {
+      "id": 18,
+      "authorId": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/41AM6pjaZhL.jpg",
+      "pages": 551,
+      "title": "Crime and Punishment",
+      "year": 1866,
+      "quantity": 4
+    },
+    {
+      "id": 19,
+      "authorId": 18,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51vxaBHD3GL._SX328_BO1,204,203,200_.jpg",
+      "pages": 824,
+      "title": "The Brothers Karamazov",
+      "year": 1880,
+      "quantity": 12
+    },
+    {
+      "id": 20,
+      "authorId": 19,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/714bRP1cCHL.jpg",
+      "pages": 158,
+      "title": "Faust",
+      "year": 1832,
+      "quantity": 1
+    },
+    {
+      "id": 21,
+      "authorId": 20,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71dUEXcxJzL.jpg",
+      "pages": 128,
+      "title": "The Old Man and the Sea",
+      "year": 1952,
+      "quantity": 0
+    },
+    {
+      "id": 22,
+      "authorId": 21,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344478704l/32560.jpg",
+      "pages": 488,
+      "title": "Stories",
+      "year": 1924,
+      "quantity": 25
+    },
+    {
+      "id": 23,
+      "authorId": 22,
+      "imageUrl": "https://m.media-amazon.com/images/I/51uKoiFYxgL.jpg",
+      "pages": 184,
+      "title": "Poems",
+      "year": 1818,
+      "quantity": 2
+    },
+    {
+      "id": 24,
+      "authorId": 23,
+      "imageUrl": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0074/9780007498772.jpg",
+      "pages": 688,
+      "title": "The Golden Notebook",
+      "year": 1962,
+      "quantity": 3
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/beautiful-arrangement-fresh-bread-assortment_23-2147761307.jpg?size=626&ext=jpg",
+      "pages": 234,
+      "title": "Freshly Baked Bread",
+      "year": 23424,
+      "quantity": 4,
+      "author": "14",
+      "id": 25
+    },
+    {
+      "title": "Pomorange",
+      "author": {},
+      "id": 26
+    },
+    {
+      "imageUrl": "https://www.knjizare-vulkan.rs/files/watermark/files/thumbs/files/images/slike_proizvoda/thumbs_1200/thumbs_w/282387_1200_1200px_w.jpg",
+      "pages": 234,
+      "title": "Na Drini Cuprija",
+      "year": 1789,
+      "quantity": 256,
+      "author": "8",
+      "id": 27
+    },
+    {
+      "imageUrl": "https://www.knjizare-vulkan.rs/files/watermark/files/thumbs/files/images/slike_proizvoda/thumbs_1200/thumbs_w/282387_1200_1200px_w.jpg",
+      "pages": 234,
+      "title": "Na Drini cuprija",
+      "year": 1789,
+      "quantity": 8,
+      "author": "16",
+      "id": 28
+    },
+    {
+      "title": "Pomorange",
+      "author": {},
+      "id": 29
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/beautiful-arrangement-fresh-bread-assortment_23-2147761307.jpg?size=626&ext=jpg",
+      "title": "Lemon",
+      "author": {},
+      "id": 30
+    },
+    {
+      "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fhow_to_zest_a_lemon.jpg%3Fitok%3DEbSkxPcW",
+      "pages": 2324,
+      "title": "we",
+      "year": 1890,
+      "quantity": 34,
+      "author": "14",
+      "id": 31
+    },
+    {
+      "title": "Kajavraja",
+      "author": {},
+      "id": 32
+    },
+    {
+      "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fhow_to_zest_a_lemon.jpg%3Fitok%3DEbSkxPcW",
+      "pages": 23,
+      "title": "Kajavraja",
+      "year": 1234,
+      "quantity": 4,
+      "author": "3",
+      "id": 33
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/beautiful-arrangement-fresh-bread-assortment_23-2147761307.jpg?size=626&ext=jpg",
+      "pages": 123,
+      "title": "raki",
+      "year": 1234,
+      "quantity": 4,
+      "author": "17",
+      "id": 34
+    },
+    {
+      "imageUrl": "sdsds",
+      "pages": 333,
+      "title": "Pomorange",
+      "year": 333,
+      "quantity": 333,
+      "author": "23",
+      "id": 35
+    },
+    {
+      "imageUrl": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fhow_to_zest_a_lemon.jpg%3Fitok%3DEbSkxPcW",
+      "pages": 2323,
+      "title": "Nebojsa",
+      "year": 333,
+      "quantity": 333,
+      "author": "14",
+      "id": 36
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Chinua Achebe",
+      "yearOfBirth": 1930
+    },
+    {
+      "name": "Hans Christian Andersen",
+      "yearOfBirth": 1805,
+      "id": 2
+    },
+    {
+      "name": "Dante Alighieri",
+      "yearOfBirth": 1265,
+      "id": 3
+    },
+    {
+      "name": "Jane Austen",
+      "yearOfBirth": 1775,
+      "id": 4
+    },
+    {
+      "name": "Samuel Beckett",
+      "yearOfBirth": 1906,
+      "id": 5
+    },
+    {
+      "name": "Giovanni Boccaccio",
+      "yearOfBirth": 1313,
+      "id": 6
+    },
+    {
+      "name": "Jorge Luis Borges",
+      "yearOfBirth": 1889,
+      "id": 7
+    },
+    {
+      "name": "Emily Bronte",
+      "yearOfBirth": 1818,
+      "id": 8
+    },
+    {
+      "name": "Albert Camus",
+      "yearOfBirth": 1913,
+      "id": 9
+    },
+    {
+      "name": "Paul Celan",
+      "yearOfBirth": 1920,
+      "id": 10
+    },
+    {
+      "name": "Louis-Ferdinand Celine",
+      "yearOfBirth": 1894,
+      "id": 11
+    },
+    {
+      "name": "Miguel de Cervantes",
+      "yearOfBirth": 1547,
+      "id": 12
+    },
+    {
+      "name": "Geoffrey Chaucer",
+      "yearOfBirth": 1343,
+      "id": 13
+    },
+    {
+      "name": "Anton Chekhov",
+      "yearOfBirth": 1860,
+      "id": 14
+    },
+    {
+      "name": "Joseph Conrad",
+      "yearOfBirth": 1857,
+      "id": 15
+    },
+    {
+      "name": "Charles Dickens",
+      "yearOfBirth": 1775,
+      "id": 16
+    },
+    {
+      "name": "Denis Diderot",
+      "yearOfBirth": 1713,
+      "id": 17
+    },
+    {
+      "name": "Fyodor Dostoevsky",
+      "yearOfBirth": 1821,
+      "id": 18
+    },
+    {
+      "name": "Johann Wolfgang von Goethe",
+      "yearOfBirth": 1749,
+      "id": 19
+    },
+    {
+      "name": "Ernest Hemingway",
+      "yearOfBirth": 1899,
+      "id": 20
+    },
+    {
+      "name": "Franz Kafka",
+      "yearOfBirth": 1883,
+      "id": 21
+    },
+    {
+      "name": "Giacomo Leopardi",
+      "yearOfBirth": 1798,
+      "id": 22
+    },
+    {
+      "name": "Doris Lessing",
+      "yearOfBirth": 1729,
+      "id": 23
+    }
+  ]
+}

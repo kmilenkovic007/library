@@ -1,0 +1,329 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "imageUrl": "http://static1.squarespace.com/static/59a1bc2fa803bb46c79b860c/t/5ab0922b88251bfd949c392e/1521521202817/Things+Fall+Apart+cover.jpg?format=1500w",
+      "pages": 209,
+      "title": "Things Fall Apart",
+      "year": 1958,
+      "quantity": 21,
+      "author": {
+        "id": 1,
+        "name": "Chinua Achebe",
+        "yearOfBirth": 1930
+      },
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "authorId": 2,
+      "imageUrl": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/6268/9781626860995.jpg",
+      "pages": 784,
+      "title": "Fairy tales",
+      "year": 1836,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "authorId": 3,
+      "imageUrl": "https://kbimages1-a.akamaihd.net/6d079104-b75e-4dc3-a313-3c58145703b4/1200/1200/False/the-divine-comedy-barnes-noble-collectible-editions.jpg",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "year": 1315,
+      "quantity": 55
+    },
+    {
+      "id": 4,
+      "authorId": 4,
+      "imageUrl": "https://m.media-amazon.com/images/I/51tiK-eB3JL.jpg",
+      "pages": 226,
+      "title": "Pride and Prejudice",
+      "year": 1813,
+      "quantity": 3
+    },
+    {
+      "id": 5,
+      "authorId": 5,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41F61GM4VZL._SX284_BO1,204,203,200_.jpg",
+      "pages": 256,
+      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "year": 1952,
+      "quantity": 13
+    },
+    {
+      "id": 6,
+      "authorId": 6,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328865921l/752711.jpg",
+      "pages": 1024,
+      "title": "The Decameron",
+      "year": 1351,
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "authorId": 7,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71iildYvQAL.jpg",
+      "pages": 224,
+      "title": "Ficciones",
+      "year": 1965,
+      "quantity": 120
+    },
+    {
+      "id": 8,
+      "authorId": 8,
+      "imageUrl": "https://cdn.shoplightspeed.com/shops/611345/files/8231848/faber-faber-childrens-wuthering-heights.jpg",
+      "pages": 342,
+      "title": "Wuthering Heights",
+      "year": 1847,
+      "quantity": 63
+    },
+    {
+      "id": 10,
+      "authorId": 10,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41IdMKkkjPL._SX318_BO1,204,203,200_.jpg",
+      "pages": 320,
+      "title": "Poems",
+      "year": 1952,
+      "quantity": 24
+    },
+    {
+      "id": 11,
+      "authorId": 11,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51P16RmwhxL._SX258_BO1,204,203,200_.jpg",
+      "pages": 505,
+      "title": "Journey to the End of the Night",
+      "year": 1932,
+      "quantity": 2
+    },
+    {
+      "id": 12,
+      "authorId": 12,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/A1QU-FgkiEL.jpg",
+      "pages": 1056,
+      "title": "Don Quijote De La Mancha",
+      "year": 1610,
+      "quantity": 0
+    },
+    {
+      "id": 13,
+      "authorId": 13,
+      "imageUrl": "https://globalbookclub.s3.amazonaws.com/resources/3095731/the_canterbury_tales/cover.jpg",
+      "pages": 544,
+      "title": "The Canterbury Tales",
+      "year": 1450,
+      "quantity": 1
+    },
+    {
+      "id": 15,
+      "authorId": 15,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Nostromo1st.jpg",
+      "pages": 320,
+      "title": "Nostromo",
+      "year": 1904,
+      "quantity": 5
+    },
+    {
+      "id": 16,
+      "authorId": 16,
+      "imageUrl": "https://images.penguinrandomhouse.com/cover/9780451531186",
+      "pages": 194,
+      "title": "Great Expectations",
+      "year": 1861,
+      "quantity": 34
+    },
+    {
+      "id": 17,
+      "authorId": 17,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51AF4sHZqwL._SX322_BO1,204,203,200_.jpg",
+      "pages": 596,
+      "title": "Jacques the Fatalist",
+      "year": 1796,
+      "quantity": 29
+    },
+    {
+      "id": 18,
+      "authorId": 18,
+      "imageUrl": "https://m.media-amazon.com/images/I/41AM6pjaZhL.jpg",
+      "pages": 551,
+      "title": "Crime and Punishment",
+      "year": 1866,
+      "quantity": 4
+    },
+    {
+      "id": 19,
+      "authorId": 18,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51vxaBHD3GL._SX328_BO1,204,203,200_.jpg",
+      "pages": 824,
+      "title": "The Brothers Karamazov",
+      "year": 1880,
+      "quantity": 12
+    },
+    {
+      "id": 20,
+      "authorId": 19,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/714bRP1cCHL.jpg",
+      "pages": 158,
+      "title": "Faust",
+      "year": 1832,
+      "quantity": 1
+    },
+    {
+      "id": 21,
+      "authorId": 20,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71dUEXcxJzL.jpg",
+      "pages": 128,
+      "title": "The Old Man and the Sea",
+      "year": 1952,
+      "quantity": 0
+    },
+    {
+      "id": 22,
+      "authorId": 21,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344478704l/32560.jpg",
+      "pages": 488,
+      "title": "Stories",
+      "year": 1924,
+      "quantity": 25
+    },
+    {
+      "id": 23,
+      "authorId": 22,
+      "imageUrl": "https://m.media-amazon.com/images/I/51uKoiFYxgL.jpg",
+      "pages": 184,
+      "title": "Poems",
+      "year": 1818,
+      "quantity": 2
+    },
+    {
+      "id": 24,
+      "authorId": 23,
+      "imageUrl": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0074/9780007498772.jpg",
+      "pages": 688,
+      "title": "The Golden Notebook",
+      "year": 1962,
+      "quantity": 3
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Chinua Achebe",
+      "yearOfBirth": 1930
+    },
+    {
+      "name": "Hans Christian Andersen",
+      "yearOfBirth": 1805,
+      "id": 2
+    },
+    {
+      "name": "Dante Alighieri",
+      "yearOfBirth": 1265,
+      "id": 3
+    },
+    {
+      "name": "Jane Austen",
+      "yearOfBirth": 1775,
+      "id": 4
+    },
+    {
+      "name": "Samuel Beckett",
+      "yearOfBirth": 1906,
+      "id": 5
+    },
+    {
+      "name": "Giovanni Boccaccio",
+      "yearOfBirth": 1313,
+      "id": 6
+    },
+    {
+      "name": "Jorge Luis Borges",
+      "yearOfBirth": 1889,
+      "id": 7
+    },
+    {
+      "name": "Emily Bronte",
+      "yearOfBirth": 1818,
+      "id": 8
+    },
+    {
+      "name": "Paul Celan",
+      "yearOfBirth": 1920,
+      "id": 10
+    },
+    {
+      "name": "Louis-Ferdinand Celine",
+      "yearOfBirth": 1894,
+      "id": 11
+    },
+    {
+      "name": "Miguel de Cervantes",
+      "yearOfBirth": 1547,
+      "id": 12
+    },
+    {
+      "name": "Geoffrey Chaucer",
+      "yearOfBirth": 1343,
+      "id": 13
+    },
+    {
+      "name": "Joseph Conrad",
+      "yearOfBirth": 1857,
+      "id": 15
+    },
+    {
+      "name": "Charles Dickens",
+      "yearOfBirth": 1775,
+      "id": 16
+    },
+    {
+      "name": "Denis Diderot",
+      "yearOfBirth": 1713,
+      "id": 17
+    },
+    {
+      "name": "Fyodor Dostoevsky",
+      "yearOfBirth": 1821,
+      "id": 18
+    },
+    {
+      "name": "Johann Wolfgang von Goethe",
+      "yearOfBirth": 1749,
+      "id": 19
+    },
+    {
+      "name": "Ernest Hemingway",
+      "yearOfBirth": 1899,
+      "id": 20
+    },
+    {
+      "name": "Franz Kafka",
+      "yearOfBirth": 1883,
+      "id": 21
+    },
+    {
+      "name": "Giacomo Leopardi",
+      "yearOfBirth": 1798,
+      "id": 22
+    },
+    {
+      "name": "Doris Lessing",
+      "yearOfBirth": 1729,
+      "id": 23
+    },
+    {
+      "name": "Albert Camus",
+      "yearOfBirth": 1913,
+      "id": 9
+    },
+    {
+      "name": "Anton Chekhov",
+      "yearOfBirth": 1860,
+      "id": 14
+    },
+    {
+      "name": "Narcos123",
+      "yearOfBirth": 1234,
+      "id": 24
+    }
+  ]
+}

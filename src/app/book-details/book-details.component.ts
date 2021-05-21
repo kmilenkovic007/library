@@ -8,7 +8,7 @@ import { BsModalRef } from 'ngx-bootstrap/modal';
   templateUrl: './book-details.component.html',
   styleUrls: ['./book-details.component.scss']
 })
-export class BookDetailsComponent implements OnInit {
+export class BookDetailsComponent {
   private wasInside = false;
   @Input() book: BookModel;
   @Input() books: BookModel[];
@@ -17,34 +17,29 @@ export class BookDetailsComponent implements OnInit {
   @Input() reload: Function;
 
 
-  @HostListener('click')
-  clickInside() {
-    this.wasInside = true;
-  }
+  // @HostListener('click')
+  // clickInside() {
+  //   this.wasInside = true;
+  // }
   
-  @HostListener('document:click')
-  clickout() {
-    if (!this.wasInside) {
-      // this.reload();
-    }
-    this.wasInside = false;
-  }
+  // @HostListener('document:click')
+  // clickout() {
+  //   if (!this.wasInside) {
+  //     // this.reload();
+  //   }
+  //   this.wasInside = false;
+  // }
 
-  constructor(
-    private bookService: BookService,
-    ) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private bookService: BookService) {}
 
   delete(book:BookModel){
       this.bookService.deleteBook(book.id)
       .subscribe(() => {
         this.deleted.emit();
         this.book = null;
-      })
+      });
     }
-
+  }
 
     
 
@@ -73,5 +68,5 @@ export class BookDetailsComponent implements OnInit {
 // }
 
     
-  }
+ 
 

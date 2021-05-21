@@ -1,6 +1,5 @@
 import { AuthorModel } from './author-model';
 
-
 export class BookModel {
   id: number;
   imageUrl: string;
@@ -25,8 +24,5 @@ export class BookModel {
     //   name : book.author.name;
     //   id: book.author.id;
     // };
-    
-
   }
-
 }

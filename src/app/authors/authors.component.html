@@ -1,6 +1,6 @@
 <div class="addArea">
   <div class="buttonArea">
-    <button type="button" class="btn btn-primary add" (click)="openModalWithComponent()">ADD NEW AUTHOR</button>
+    <button type="button" class="btn btn-primary add" (click)="addAuthor()">ADD NEW AUTHOR</button>
   </div>
   <div class="table">
     <table>
@@ -12,11 +12,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor = "let author of authors">
-          <td class="author-name">{{ author.name}}</td>
-          <td>{{ author.yearOfBirth}}</td>
+        <tr *ngFor="let author of authors">
+          <td class="author-name">{{author.name}}</td>
+          <td>{{author.yearOfBirth}}</td>
           <td>
-            <button class="btn btn-danger"  (click)= "delete(author)">Delete author</button>
+            <button class="btn btn-danger" (click)="delete(author)">Delete author</button>
             <span class="material-icons recycle-bin" (click)="delete(author)">delete</span>
           </td>
         </tr>

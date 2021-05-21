@@ -2,15 +2,15 @@
   <div class="book-library">
     <div class="book-table">
       <div>
-        <label for="authors">Choose an author : </label>
+        <label for="authors">Choose an author:</label>
         <select id="authors" name="authors" [(ngModel)]="selectedAuthorId" (change)="choose(selectedAuthorId)">
           <option value=""></option>
           <option *ngFor="let author of authors" 
             [value]="author.id">
             {{author.name}}
           </option>
-        </select><br>
-        </div>
+        </select>
+      </div>
       <div>
         <label for="pageSize">Choose page Size </label>
         <select id="pageSize" name="pageSize" [(ngModel)]="pageSize" (change)="chooseSize(pageSize)">
@@ -23,8 +23,8 @@
         <div class="icons">
           <span class="material-icons reorder" (click)="isActiveMenu = !isActiveMenu">reorder</span>
           <div *ngIf="isActiveMenu === true" class="menu">
-              <a routerLinkActive="active" routerLink="/books">Books</a>
-              <a routerLinkActive="active" routerLink="/authors">Authors</a>
+            <a routerLinkActive="active" routerLink="/books">Books</a>
+            <a routerLinkActive="active" routerLink="/authors">Authors</a>
           </div>
           <span class="material-icons search" *ngIf="isActiveSearch === false" (click)="isActiveSearch = true">search</span>
           <div class="searchField" *ngIf="isActiveSearch === true">
@@ -65,14 +65,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor = "let book of books" [class.selected]="book.quantity===0">
+            <tr *ngFor = "let book of books" [class.selected]="book.quantity === 0">
               <td><img [src]="book.imageUrl"></td>
-              <td class="title">{{ book.title }}</td>
-              <td class="author">{{ book.author.name}}</td>
-              <td>{{ book.year }}</td>
-              <td>{{ book.pages }}</td>
-              <td>{{ book.quantity}}</td>
-              <td><button class="btn-primary" (click)="openModalWithComponent(book)" >Edit</button></td>
+              <td class="title">{{book.title}}</td>
+              <td class="author">{{book.author.name}}</td>
+              <td>{{book.year}}</td>
+              <td>{{book.pages}}</td>
+              <td>{{book.quantity}}</td>
+              <td><button class="btn-primary" (click)="openModalWithComponent(book)">Edit</button></td>
               <td class="for-desktop" (click)="onSelect(book)"><span class="material-icons">more_vert</span></td>
               <td class="for-mobile" (click)="openModalForMobile(book)"><span class="material-icons">more_vert</span></td>
             </tr>

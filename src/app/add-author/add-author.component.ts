@@ -8,21 +8,19 @@ import { AuthorService } from '../author.service';
   templateUrl: './add-author.component.html',
   styleUrls: ['./add-author.component.scss']
 })
-export class AddAuthorComponent implements OnInit {
+export class AddAuthorComponent {
   author = new AuthorModel({});
   getAuthors: Function;
-  constructor(public bsModalRef: BsModalRef, private authorService: AuthorService) { }
 
-  ngOnInit(): void {
-  }
+  constructor(
+    public bsModalRef: BsModalRef, 
+    private authorService: AuthorService) { }
 
-
-  save(author){
-    this.authorService.addAuthor(author).subscribe(_ =>
+  save() {
+    this.authorService.addAuthor(this.author).subscribe(_ =>
       { 
         this.getAuthors();
         this.bsModalRef.hide();
       });
   }
-
 }

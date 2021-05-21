@@ -1,60 +1,47 @@
-.add-book{
+.add-book {
   position: relative;
-  .close{
+  .close {
     position: absolute;
     right: 10px;
     top: 2px;
   }
-
-  .modal-view{
-    .form-view{
+  .modal-view {
+    .form-view {
       padding: 20px;
-      form{
-        .sec-part{
+      form{ 
+        .sec-part {
           width: 100%;
           display: flex;
-          .form-details{
+          .form-details {
             width: 50%;
-            .numbers{
+            .numbers {
               display: flex;
-              .pages{
+              .pages {
                 margin-right: 2px;
               }
-              .quantity{
+              .quantity { 
                 margin-left: 2px;
               }
             }
-            button{
+            button {
               margin-top: 35px;
             }
           }
-          .image-preview{
+          .image-preview { 
             width: 50%;
             text-align: center;
-            img{
+            img {
               padding:20px;
               max-width: 100%;
               height: auto;
               max-height: 245px;
             }
-
-          }
-          
-          
+          } 
         }
-      
-
-
       }
-
     }
-
   }
-
-
-      
-
-  }
+}
 
 
 

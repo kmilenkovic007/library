@@ -5,9 +5,6 @@ import { BookModel } from '../models/book-model';
 import { AuthorService } from '../author.service';
 import { BsModalService, BsModalRef, ModalOptions } from 'ngx-bootstrap/modal';
 import { AddBookComponent } from '../add-book/add-book.component';
-import { of, pipe } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { BookDetailsComponent } from '../book-details/book-details.component';
 import { BookDetailsModalComponent } from '../book-details-modal/book-details-modal.component';
 
 
@@ -29,27 +26,22 @@ export class BooksComponent implements OnInit {
   filteredBooks: BookModel[];
   authors = [];
   selectedAuthorId:number;
-  bsModalRef: BsModalRef;
   isActiveSearch = false;
   searchValue: string;
   isActiveMenu = false;
   
-
-  
-
   constructor( 
     private bookService: BookService, 
-    private authorService: AuthorService, 
-    private modalService: BsModalService) {
-
-    authorService.getAuthors().subscribe(
+    authorService: AuthorService, 
+    private modalService: BsModalService
+    ) {
+      authorService.getAuthors().subscribe(
       authors => this.authors = authors);
       this.chooseSize(this.pageSize);
-
-   }
+    }
    
    sort(sortName){
-    this.currentPage=1;
+    this.currentPage = 1;
     // kada kliknem da radim sort na title recimo, a na drugoj sam strani, on me vraca na prvu stranu i sortira
 
 
@@ -61,16 +53,14 @@ export class BooksComponent implements OnInit {
     
     // ovaj deo
    
-    this.sortName = sortName;
-    if (sortName !== this.sortName || this.sortDirection === 'desc') {
-      this.sortDirection = '';
-    }else if (this.sortDirection === ''){
-      this.sortDirection = 'asc'
-    } else if (this.sortDirection === 'asc'){
-      this.sortDirection = 'desc';
-    } else if (this.sortDirection === 'desc'){
+    if (sortName !== this.sortName || this.sortDirection === '') {
+      this.sortDirection = 'asc';
+    }else if (this.sortDirection === 'asc'){
+      this.sortDirection = 'desc'
+    } else {
       this.sortDirection = '';
     }
+    this.sortName = sortName;
     this.getBooksPerPage();
     
 
@@ -122,12 +112,13 @@ export class BooksComponent implements OnInit {
   getBooksPerPage(){
     this.bookService.getBooks(this.currentPage, this.pageSize, this.sortName, this.sortDirection).subscribe(
       books => {
-      this.books = books.map(book => new BookModel(book))});
-      this.selectedBook = null;
+        this.books = books.map(book => new BookModel(book))
+      });
+    this.selectedBook = null;
   }
 
   get pages() {
-    console.log(Math.ceil(this.totalPages));
+    // console.log(Math.ceil(this.totalPages));
     return Array(Math.ceil(this.totalPages)).fill(Math.ceil(this.totalPages)).map((x,i)=>i+1);
   }
 
@@ -162,7 +153,7 @@ export class BooksComponent implements OnInit {
   filter(){
     if(this.searchValue){
       this.copyBooks = this.books.filter(book => (book.title.toLowerCase().includes(this.searchValue.toLowerCase())));
-    }else{
+    }else {
       this.getCurrentPage(1);
     }
   }
@@ -182,8 +173,6 @@ export class BooksComponent implements OnInit {
     this.pageSize = pageSize;
     this.getBooksPerPage();
     this.totalPages = this.numOfBooks / this.pageSize;
-
-    
   }
 
   openModalWithComponent(book?){
@@ -192,40 +181,30 @@ export class BooksComponent implements OnInit {
         // ili
         book : new BookModel(book ? book : {}),
         getBooksPerPage :  this.getBooksPerPage.bind(this)
-
       }
-      
-      this.bsModalRef = this.modalService.show(AddBookComponent, {initialState, class: 'modal-lg'});
+      this.modalService.show(AddBookComponent, {initialState, class: 'modal-lg'});
+  }
 
+  openModalForMobile(book){
+    const initialState = {
+      book : this.selectedBook = book,
+      getBooksPerPage :  this.getBooksPerPage.bind(this)
     }
-
-    openModalForMobile(book){
-      const initialState = {
-        book : this.selectedBook = book,
-        getBooksPerPage :  this.getBooksPerPage.bind(this)
-        
-      }
-      this.bsModalRef = this.modalService.show(BookDetailsModalComponent, {initialState});
-      this.bsModalRef.content.closeBtnName = 'Close';
-
-    }
+    this.modalService.show(BookDetailsModalComponent, {initialState});
+  }
       
 
-    closeSearch(){
-      this.isActiveSearch = false;
-      this.searchValue ='';
-      this.getCurrentPage(1);
+  closeSearch(){
+    this.isActiveSearch = false;
+    this.searchValue ='';
+    this.getCurrentPage(1);
+  }
 
-    }
-
-    update(book){
-      this.bookService.updateBook(book)
-    //     .subscribe(() => this.goBack());
-    //   }
-     
-
-      
-    }
+  update(book){
+    this.bookService.updateBook(book)
+  //     .subscribe(() => this.goBack());
+  //   }
+  }
 
     // update(){
     //     this.bookService.updateBook(this.book)

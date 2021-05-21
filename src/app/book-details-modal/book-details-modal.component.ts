@@ -8,14 +8,11 @@ import { BookService } from '../book.service';
   templateUrl: './book-details-modal.component.html',
   styleUrls: ['./book-details-modal.component.scss']
 })
-export class BookDetailsModalComponent implements OnInit {
+export class BookDetailsModalComponent {
   book: BookModel;
+  getBooksPerPage : Function;
 
   constructor(public bsModalRef: BsModalRef, private bookService: BookService) { }
-
-  ngOnInit(): void {
-  }
-  getBooksPerPage(){}
 
   delete(book:BookModel){
       this.bookService.deleteBook(book.id)
@@ -23,9 +20,7 @@ export class BookDetailsModalComponent implements OnInit {
         this.getBooksPerPage();
         this.book = null;
         this.bsModalRef.hide();
-
-
-      })
+      });
     }
 
 }

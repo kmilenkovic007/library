@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { of, Observable } from 'rxjs';
-import { Authors } from './mock-authors';
+import { Observable } from 'rxjs';
 import { AuthorModel } from './models/author-model';
 import { HttpClient } from '@angular/common/http';
 
@@ -22,8 +21,6 @@ export class AuthorService {
   deleteAuthor(id: number){
       return this.http.delete('http://localhost:3333/authors/'+ id);
     }
-
-
 }
 
   

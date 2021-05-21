@@ -5,7 +5,7 @@
   font-family: "Arial";
   color:  black;
   .book-table {
-    label{
+    label {
       padding-right: 10px;
     }
     width: 100%;
@@ -13,26 +13,25 @@
       width: 70%;
     }
 
-    .sort-column{
+    .sort-column {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
     }
-    .book-header{
+    .book-header {
       position: relative;
       background-color: #135fac;
       // margin:0px;
       height: 100px;
       font-size: 10px;
-      .icons{
+      .icons {
         display: flex;
         justify-content: space-between;
         height: 50px;
-        .reorder{
+        .reorder {
           cursor: pointer;
         }
-        .menu{
+        .menu {
           position: absolute;
           width: 100px;
           height: 60px;
@@ -41,7 +40,7 @@
           left: 22px;
           z-index: 1;
           
-          a{
+          a { 
             display: block;
             width: 100px;
             height: 30px;
@@ -54,35 +53,33 @@
             
           }
         }
-        .searchField{
+        .searchField {
           position: relative;
-          input{
+          input {
             width: 170px;
             height: 30px;
             margin: 11px 8px;
             color:grey;
             border-color: #f5f5f5;
           }
-          .close{
+          .close {
             position: absolute;
             top: 21px;
             left: 158px;
             font-size: small;
-            margin: 0px !important ;
-            color: black !important ;
-            
+            margin: 0px;
+            color: black;
           }
         }
-        .material-icons{
+        .material-icons {
           color: white;
           margin: 10px 20px;
-        &.search{
-          cursor: pointer;
-            
-          }
+          &.search{
+            cursor: pointer;  
+           }
         }
       }
-      .circle{
+      .circle {
         border: 1px solid grey;
         border-radius: 50%;
         font-size: 20px;
@@ -99,29 +96,25 @@
         justify-content: center;
         align-items: center;
         box-shadow: 1px 1px rgb(138, 135, 135);
-
       }
-      h1{
+      h1 {
         margin-left: 60px;
         color: white;
       }
       
     }
-    .book-body{
+    .book-body {
       overflow: auto;
       table{
         font-size: 18px;
         border: 1px solid #f5f5f5;
         border-collapse: collapse;
         width: 100%;
-        
-        tr, td{
+        tr, td {
           height: 50px;
           text-align: center;
-          
         }
-
-        thead{
+        thead {
           border-bottom: 1px solid rgb(199, 197, 197);
           tr{
             td{
@@ -188,20 +181,18 @@
           }
         }
       }
-
     }
-    
-    ul{
+    ul {
       display: flex;
-      li{
+      li {
         margin: 5px;
-        &.active{
+        &.active {
           font-weight: bold;
         }
-        a:hover{
+        a:hover {
           cursor: pointer;
         }
-        a:active{
+        a:active {
           font-weight: bold;
         }
       }
@@ -213,7 +204,6 @@
       width: 30%;
       display: block;
     }
-   
   }
 }
   

@@ -4,15 +4,14 @@
   </button>
   <form>
     <div class="form-group">
-      <label for="name">Name of author:</label>
-      <input [(ngModel)]="author.name" #name="ngModel" name="name" id="name" type="text" class="form-control">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="author.name" name="name" type="text" class="form-control">
     </div>
     <div class="form-group">
       <label for="yearOfBirth">Year of birth:</label>
-      <input [(ngModel)]="author.yearOfBirth" #yearOfBirth="ngModel" name="yearOfBirth" id="yearOfBirth" type="number" class="form-control" >
+      <input [(ngModel)]="author.yearOfBirth" name="yearOfBirth" type="number" class="form-control">
     </div>
-    <button class="btn btn-primary" (click)="save(author)">Submit</button>
-  
+    <button class="btn btn-primary" (click)="save()">Submit</button>
   </form>
 </div>
 

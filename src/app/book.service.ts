@@ -12,23 +12,23 @@ export class BookService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  
-  constructor(private http: HttpClient) { }
+
+  constructor(private http: HttpClient) {}
 
   getBooks(currentPage, pageSize, sortName, sortDirection): Observable<BookModel[]>{
     let url = `http://localhost:3333/books?_expand=author&_page=${currentPage}&_limit=${pageSize}`;
+    
     if(sortDirection) {
       url += `&_sort=${sortName}&_order=${sortDirection}`
     }
     return this.http.get<BookModel[]>(url);
-// ili koa ja sto sam:
+  }
+
+// ili kao ja sto sam:
     // if(sortDirection === '') {
     //   return this.http.get<BookModel[]>(`http://localhost:3333/books?_expand=author&_page=${currentPage}&_limit=${pageSize}`);
     // }else{
     //   return this.http.get<BookModel[]>(`http://localhost:3333/books?_expand=author&_page=${currentPage}&_limit=${pageSize}&_sort=${sortName}&_order=${sortDirection}`);
-    }
-  
-  
 
   getfilteredBooksByAuthor(selectedAuthorId){
     return this.http.get<BookModel []>(`http://localhost:3333/books?_expand=author&authorId=${selectedAuthorId}`)
@@ -46,8 +46,8 @@ export class BookService {
 
   updateBook(book:BookModel): Observable<BookModel>{
       return this.http.put<BookModel>('http://localhost:3333/books'+'/'+ book.id, book, this.httpOptions);
-    }
   }
+}
 
 
   
